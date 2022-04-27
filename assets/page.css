@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
 :root{
     --link:#000;
     --hover:#b00;
@@ -13,7 +14,7 @@ body{
     padding: 0;
     overflow: hidden;
     background-color: var(--bg);
-    font family: tahoma;
+    font-family: 'Comfortaa', cursive;
     color: var(--main);
 }
 
