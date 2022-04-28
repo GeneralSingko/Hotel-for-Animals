@@ -1,19 +1,14 @@
-:root{
-    --link:#000;
-    --hover:#b00;
-    --main:#000;
-    --bg:#f0f0f0;
-    --size:99vmin;
-    --ratio: 1 / 1.1;
-    font-size: calc(var(--size) / 100);
+*{
+    margin: 0;
+    padding: 0;
 }
 
 body{
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow: scroll;
     background-color: var(--bg);
-    font family: tahoma;
+    font-family: tahoma;
     color: var(--main);
 }
 
@@ -22,68 +17,59 @@ header{
     justify-content: space-between;
     align-items: center;
     font-weight: 900;
-    padding: 40px 0;
+    padding: 35px 0;
 }
 
 .container{
-    width: calc(var(--size) * var(--ratio));
-    margin: 0 auto;
-}
-
-.logo{
-    width:150px;
-    padding:10px 0;
-    cursor: pointer;
-    position: relative;
-    text-align: center;
-    border: 3px solid var(--main);
-    color: var(--main);
-    font-size: 2.2rem;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 2.5px;
-    transition: all 0.2s;
-}
-
-.logo:hover{
-    background: var(--main);
-    color: var(--bg);
+    width: 1170px;
+    margin: auto;
 }
 
 nav{
-    display: flex;
+    float: right;
+    list-style: none;
+    margin-top: 20px;
+    padding-right: 10px;
 }
 
-nav{
+nav li{
     display: inline-block;
+}
+
+nav a{
     color: #000;
-    font-size: 2.2rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 5px 10px;
-    transition: all 300ms ease-in-out;
-    margin-right: 10px;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-size: 14;
 }
 
 nav a:hover{
-     color: var(--hover);
+    background: #000;
+    color: #fff;
+}
+
+.logo img{
+    width: 270px;
+    float: left;
+    padding-left: 5%;
+    padding-top: 2%;
 }
 
 .intro{
      width: 100%;
      text-align: center;
-     overflow: hidden;
-     font-size: 2rem;
+     font-size: 20px;
      text-transform: uppercase;
      font-weight: bold;
+     background-image: url(../images/bg_image.jpg);
 }
 
 .intro-title{
-    color: var(--main);
-    font-size: 15rem;
+    color: #000;
+    font-size: 45px;
     text-transform: uppercase;
     font-weight: bold;
-    margin-top: 10vmin;
+    margin-top: 10px;
 }
 
 .intro-title p{
@@ -91,15 +77,21 @@ nav a:hover{
 }
 
 .btn{
-    display: inline-block;
-    padding: 10px 20px;
-    text-align: center;
     border: 1px solid #000;
-    cursor: pointer;
-    transition: all 300ms ease-in-out;
+    padding: 10px 75px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 20px;
+    display: inline-block;
+    color: #000;
 }
 
 .btn:hover{
     background-color: #000;
-    color: var(--bg);
+    color: white;
+}
+
+.footer{
+    width: 100%;
 }
